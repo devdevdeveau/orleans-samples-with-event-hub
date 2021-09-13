@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>f55b08e2-e807-40b8-a1b6-28a24d53a2d9</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Orleans.CodeGenerator.MSBuild" Version="3.5.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Orleans.Persistence.AzureStorage" Version="3.5.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.14" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="Microsoft.Orleans.Reminders.AzureStorage" Version="3.4.3" />
+    <PackageReference Include="Microsoft.Orleans.Clustering.AzureStorage" Version="3.4.3" />
+    <PackageReference Include="Microsoft.Orleans.EventSourcing" Version="3.4.3" />
+    <PackageReference Include="Microsoft.Orleans.Hosting.Kubernetes" Version="3.4.3" />
+    <PackageReference Include="Microsoft.Orleans.Server" Version="3.4.3" />
+  </ItemGroup>
+
+</Project>
